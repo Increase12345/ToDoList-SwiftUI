@@ -8,49 +8,34 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @StateObject var vm = LoginViewViewModel()
     
     var body: some View {
         NavigationStack {
             VStack {
                 // Header
-                HeaderView()
+                HeaderView(rotation: 15, color: .pink, headerText: "To Do List", headerSubText: "Get things done")
                 
                 // Login Form
                 Group {
                     ZStack {
-                        Color(.systemGray6)
+                        Color(.white)
                         VStack(spacing: 20) {
-                            TextField("Email Address...", text: $email)
-                                .padding(.horizontal)
-                                .padding(.vertical, 10)
-                                .background(.white)
-                                .cornerRadius(10)
-                            SecureField("Password...", text: $password)
-                                .padding(.horizontal)
-                                .padding(.vertical, 10)
-                                .background(.white)
-                                .cornerRadius(10)
+                            TextField("Email Address...", text: $vm.email)
+                                .modifier(TextFieldModificator())
+                            SecureField("Password...", text: $vm.password)
+                                .modifier(TextFieldModificator())
                             
-                            Button {
+                            TLButton(title: "Log In", background: .blue) {
                                 
-                            } label: {
-                                Text("Log In")
-                                    .frame(width: 120, height: 45)
-                                    .background(.blue)
-                                    .clipShape(Capsule())
-                                    .foregroundColor(.white)
-                                    .bold()
                             }
                         }
                         .textInputAutocapitalization(.never)
                         .padding(.horizontal, 40)
                     }
-                    .frame(width: .infinity, height: 250)
+                    .frame(width: 300, height: 250)
                     .cornerRadius(20)
                 }
-                .padding(.horizontal)
                 
                 // Create Account
                 Spacer()
@@ -62,6 +47,7 @@ struct LoginView: View {
                 }
                 .padding(.bottom, 50)
             }
+            .background(Color(.systemGray6))
         }
     }
 }
