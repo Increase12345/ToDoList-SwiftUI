@@ -29,9 +29,10 @@ struct RegisterView: View {
                         SecureField("Password...", text: $vm.password)
                             .modifier(TextFieldModificator())
                         
-                        TLButton(title: "Create Account", background: .green) {
-                            
+                        TLButton(title: "Create Account", background: vm.validateForm ? .gray: .green) {
+                            Task { try await vm.register() }
                         }
+                        .disabled(vm.validateForm)
                     }
                     .textInputAutocapitalization(.never)
                     .padding(.horizontal, 40)

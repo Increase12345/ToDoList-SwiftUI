@@ -33,6 +33,7 @@
 		4017E1C72A1AA42E0081EB2B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017E1C62A1AA42E0081EB2B /* HeaderView.swift */; };
 		4017E1CE2A1BE6F40081EB2B /* TextModifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017E1CD2A1BE6F40081EB2B /* TextModifications.swift */; };
 		4017E1D22A1BE9400081EB2B /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017E1D12A1BE9400081EB2B /* TLButton.swift */; };
+		4017E1D42A1BFC970081EB2B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017E1D32A1BFC970081EB2B /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		4017E1C62A1AA42E0081EB2B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		4017E1CD2A1BE6F40081EB2B /* TextModifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifications.swift; sourceTree = "<group>"; };
 		4017E1D12A1BE9400081EB2B /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		4017E1D32A1BFC970081EB2B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			children = (
 				4017E1CD2A1BE6F40081EB2B /* TextModifications.swift */,
 				4017E1D12A1BE9400081EB2B /* TLButton.swift */,
+				4017E1D32A1BFC970081EB2B /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				4017E1A82A1AA06E0081EB2B /* ProfileView.swift in Sources */,
 				4017E1B42A1AA10E0081EB2B /* User.swift in Sources */,
 				4017E1B22A1AA0CD0081EB2B /* ToDoListItemView.swift in Sources */,
+				4017E1D42A1BFC970081EB2B /* Extensions.swift in Sources */,
 				4017E1BC2A1AA1720081EB2B /* ToDoListViewViewModel.swift in Sources */,
 				4017E1C02A1AA18F0081EB2B /* LoginViewViewModel.swift in Sources */,
 				4017E1A62A1AA0520081EB2B /* MainView.swift in Sources */,

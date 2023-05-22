@@ -26,9 +26,10 @@ struct LoginView: View {
                             SecureField("Password...", text: $vm.password)
                                 .modifier(TextFieldModificator())
                             
-                            TLButton(title: "Log In", background: .blue) {
-                                
+                            TLButton(title: "Log In", background: vm.validateForm ? .gray: .blue) {
+                                Task { try await vm.login() }
                             }
+                            .disabled(vm.validateForm)
                         }
                         .textInputAutocapitalization(.never)
                         .padding(.horizontal, 40)
