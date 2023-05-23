@@ -15,7 +15,10 @@ class RegisterViewViewModel: ObservableObject {
     @Published var password = ""
     
     var validateForm: Bool {
-        name.isEmpty || !email.contains("@") || !email.contains(".") || password.count < 6 ? true: false
+        name.trimmingCharacters(in: .whitespaces).isEmpty ||
+        !email.trimmingCharacters(in: .whitespaces).contains("@") ||
+        !email.trimmingCharacters(in: .whitespaces).contains(".") ||
+        password.trimmingCharacters(in: .whitespaces).count < 6 ? true: false
     }
     
     func register() async throws {

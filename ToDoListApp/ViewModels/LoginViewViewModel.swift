@@ -11,10 +11,9 @@ import Firebase
 class LoginViewViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
-    @Published var errorMessage = ""
     
     var validateForm: Bool {
-        !email.contains("@") || !email.contains(".") || password.count < 6 ? true: false
+        !email.trimmingCharacters(in: .whitespaces).contains("@") || !email.trimmingCharacters(in: .whitespaces).contains(".") || password.trimmingCharacters(in: .whitespaces).count < 6 ? true: false
     }
     
     func login() async throws {

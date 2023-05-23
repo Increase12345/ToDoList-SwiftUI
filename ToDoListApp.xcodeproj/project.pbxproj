@@ -119,11 +119,11 @@
 			isa = PBXGroup;
 			children = (
 				4017E1C52A1AA4220081EB2B /* SubView */,
-				4017E1A52A1AA0520081EB2B /* MainView.swift */,
 				4017E1AD2A1AA0950081EB2B /* LoginView.swift */,
 				4017E1AF2A1AA0A20081EB2B /* RegisterView.swift */,
-				4017E1A72A1AA06E0081EB2B /* ProfileView.swift */,
+				4017E1A52A1AA0520081EB2B /* MainView.swift */,
 				4017E1A92A1AA07C0081EB2B /* ToDoListView.swift */,
+				4017E1A72A1AA06E0081EB2B /* ProfileView.swift */,
 				4017E1AB2A1AA08D0081EB2B /* NewItemView.swift */,
 				4017E1B12A1AA0CD0081EB2B /* ToDoListItemView.swift */,
 			);
@@ -136,8 +136,8 @@
 				4017E1BF2A1AA18F0081EB2B /* LoginViewViewModel.swift */,
 				4017E1C12A1AA19B0081EB2B /* RegisterViewViewModel.swift */,
 				4017E1B72A1AA1400081EB2B /* MainViewViewModel.swift */,
-				4017E1B92A1AA1560081EB2B /* ProfileViewViewModel.swift */,
 				4017E1BB2A1AA1720081EB2B /* ToDoListViewViewModel.swift */,
+				4017E1B92A1AA1560081EB2B /* ProfileViewViewModel.swift */,
 				4017E1BD2A1AA1830081EB2B /* NewItemViewViewModel.swift */,
 				4017E1C32A1AA1AA0081EB2B /* ToDoListItemViewViewModel.swift */,
 			);
