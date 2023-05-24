@@ -21,6 +21,8 @@ struct ProfileView: View {
                 VStack(alignment: .leading) {
                     if let user = vm.user {
                         profileView(user: user)
+                    } else {
+                        ProgressView()
                     }
                 }
                 
