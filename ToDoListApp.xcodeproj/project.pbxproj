@@ -125,7 +125,6 @@
 				4017E1A92A1AA07C0081EB2B /* ToDoListView.swift */,
 				4017E1A72A1AA06E0081EB2B /* ProfileView.swift */,
 				4017E1AB2A1AA08D0081EB2B /* NewItemView.swift */,
-				4017E1B12A1AA0CD0081EB2B /* ToDoListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				4017E1C62A1AA42E0081EB2B /* HeaderView.swift */,
+				4017E1B12A1AA0CD0081EB2B /* ToDoListItemView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     @StateObject var vm = RegisterViewViewModel()
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack {
@@ -42,8 +43,20 @@ struct RegisterView: View {
             }
             
             Spacer()
+            
+            HStack {
+                Text("Have an account?")
+                Text("Log In")
+                    .foregroundColor(.blue)
+                    .onTapGesture {
+                        dismiss()
+                    }
+            }
+            .padding(.bottom, 50)
+            
         }
         .background(Color(.systemGray6))
+        .navigationBarBackButtonHidden()
     }
 }
 
